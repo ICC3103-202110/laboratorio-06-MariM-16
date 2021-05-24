@@ -25,20 +25,20 @@ function ValueQ(varia){
         
       },
       {
-        name: 'Temperature',
+        name: 'temp',
         type: 'input',
         message: 'Temperature value to convert? ',
         default: "",
       },
       {
         type: 'list',
-        name: 'Unit',
+        name: 'From',
         message: 'From? ',
         choices: ['Celsius', 'Fahrenheit', 'Kelvin']
       },
       {
         type: 'list',
-        name: 'Convert',
+        name: 'To',
         message: 'To? ',
         choices: ['Celsius', 'Fahrenheit', 'Kelvin']
       }
@@ -50,7 +50,7 @@ function view(){
       title: get_title()
     }
   }
-  module.exports = {
+module.exports = {
     view,
     ValueQ
-  }
+}
